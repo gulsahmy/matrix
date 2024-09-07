@@ -1,0 +1,24 @@
+.container {
+  @include neo(100vh, $pathName1);
+}
+
+.home {
+  height: 80vh;
+  // border: 5px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  &__name {
+    font-size: 5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid $text-color;
+    width: 100%;
+    &--last {
+      color: #6fa308;
+      font-weight: bold;
+    }
+  }
+}
